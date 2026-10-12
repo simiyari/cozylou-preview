@@ -1,0 +1,1 @@
+var e=document.documentElement.lang||`en`,t=null;function n(){return t||=fetch(`/cozylou-preview/${e}/pieces.json`).then(e=>{if(!e.ok)throw Error(`pieces.json ${e.status}`);return e.json()}).catch(e=>{throw t=null,e}),t}export{n as t};

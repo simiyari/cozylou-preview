@@ -1,0 +1,1 @@
+import"./dialogs.C6mFTH1_.js";import"./cart.CA82QKrf.js";document.getElementById(`search-modal`)?.addEventListener(`dialog:open`,()=>document.getElementById(`search-modal-input`)?.focus());
