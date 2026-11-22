@@ -3,6 +3,6 @@ var e=e=>String(e).replace(/[&<>"']/g,e=>({"&":`&amp;`,"<":`&lt;`,">":`&gt;`,'"'
     <div class="card__info">
       <h2 class="card__heading"><a class="card__link t-label" href="${n.url}">${e(n.name)}</a>
       <span class="t-italic card__size">${e(a.sizeCm??r.sizeUnconfirmed)}</span></h2>
-      <p class="t-label card__price"><span class="t-muted">${e(r.priceToConfirm)}</span></p>
+      <p class="t-label card__price">${a.price?e(a.price):`<span class="t-muted">${e(n.status===`in_stock`?r.priceToConfirm:r.sold)}</span>`}</p>
     </div>
   </li>`}export{n as cardHtml};
